@@ -1,30 +1,27 @@
 package Appivo.Automation_Assignment;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.junit.Assert;
-
 
 import Appivo.Automation_Assignment.Utilities.utilities;
 
 public class productPage extends utilities {
-WebDriver driver ;
-String productName;
-	
-	public productPage(WebDriver driver){
+	WebDriver driver;
+	String productName;
+
+	public productPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(id="productTitle")
+
+	@FindBy(id = "productTitle")
 	WebElement prodName;
-	
+
 	public String getProdDetails() {
-		productName =  prodName.getText();
+		productName = prodName.getText();
 		return productName;
 	}
 

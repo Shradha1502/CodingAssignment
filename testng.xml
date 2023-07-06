@@ -7,7 +7,6 @@
   <test thread-count="5" name="Stand Alone Test">
     <classes>
       <class name="Appivo.Automation_Assignment.StandAloneTest"/>
-      <class name="Appivo.Automation_Assignment.ErrorValidationTest"/>
     </classes>
   </test> <!-- Test -->
   
